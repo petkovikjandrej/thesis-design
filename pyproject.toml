@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "thesis-design"
+version = "0.1.0"
+description = "Thesis Design"
+authors = ["Andrej Petkovikj"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pymongo = {version = "3.11", extras = ["srv"]}
+boto3 = "^1.35.23"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
